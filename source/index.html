@@ -2,11 +2,94 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>HTML Academy: Пинк - Главная страница</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="contest.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="page-header__bottom">
+        <h1 class="page-header__title">Взгляните на жизнь иначе!</h1>
+      </div>
+      <div class="download-app">
+        <div class="download-app__wrapper">
+          <a class="download-app__link" href="#">Скачать приложение</a>
+          <div class="download-app__list">
+            <a class="download-app__store-link" href="#">
+              <img src="https://via.placeholder.com/47x56" alt="Ссылка на App Store" width="47" height="56">
+            </a>
+            <a class="download-app__store-link" href="#">
+              <img src="https://via.placeholder.com/43x47" alt="Ссылка на Play Market" width="43" height="47">
+            </a>
+            <a class="download-app__store-link" href="#">
+              <img src="https://via.placeholder.com/44x41" alt="Ссылка на Microsoft Store" width="44" height="41">
+            </a>
+          </div>
+          <p class="download-app__available-versions">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </div>
+    </header>
+    <main class="index-content">
+      <div class="slogan">
+        <div class="slogan__wrapper">
+          <p>
+            Устали от серости мегаполиса?
+          </p>
+          <p>
+            Нам есть, что вам предложить!
+          </p>
+        </div>
+      </div>
+      <div class="features">
+        <div class="features__wrapper">
+          <section class="features__item">
+            <h2 class="features__title">
+              Поднимает настроение
+            </h2>
+            <p class="features__desc">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </section>
+          <section class="features__item">
+            <h2 class="features__title">
+              Меняет мир вокруг
+            </h2>
+            <p class="features__desc">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </section>
+          <section class="features__item">
+            <h2 class="features__title">
+              Заводит новых друзей
+            </h2>
+            <p class="features__desc">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
