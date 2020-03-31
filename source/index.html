@@ -92,17 +92,21 @@
       </div>
       <div class="reviews">
         <div class="reviews__wrapper">
-          <section class="review">
-            <h2 class="review__author">
-              Николай Петров
-            </h2>
-            <p class="review__text">
-              &laquo;Это приложение перевернуло мой мир и позволило
-              по-новому взглянуть на привычные серые вещи! А еще я познакомился
-              со своей будущей женой в комментариях к выложенной фотографии!&raquo;
-            </p>
-          </section>
-          <div class="slider-controls">
+          <div class="reviews__list">
+            <section class="reviews__item reviews__item--active review">
+              <h2 class="review__author">
+                Николай Петров
+              </h2>
+              <p class="review__text">
+                &laquo;Это приложение перевернуло мой мир и позволило
+                по-новому взглянуть на привычные серые вещи! А еще я познакомился
+                со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+              </p>
+            </section>
+            <section class="reviews__item reviews__item review"></section>
+            <section class="reviews__item reviews__item review"></section>
+          </div>
+          <div class="reviews__controls slider-controls">
             <button class="slider-controls__btn" type="button" aria-label="Слайд 1"></button>
             <button class="slider-controls__btn" type="button" aria-label="Слайд 2"></button>
             <button class="slider-controls__btn" type="button" aria-label="Слайд 3"></button>
@@ -115,6 +119,14 @@
             <tr>
               <th class="package__header">
                 <p class="package__title">
+                  База
+                </p>
+                <p class="package__price">
+                  1,99 USD
+                </p>
+              </th>
+              <th class="package__header">
+                <p class="package__title">
                   Стандарт
                 </p>
                 <p class="package__price">
@@ -122,27 +134,59 @@
                 </p>
                 <span class="package__hit">Хит</span>
               </th>
+              <th class="package__header">
+                <p class="package__title">
+                  Анлим
+                </p>
+                <p class="package__price">
+                  9,99 USD
+                </p>
+              </th>
             </tr>
             <tr>
               <td class="package__feature">
                 <span class="package__feature-name">Розовый фильтр</span>
-                <span class="package__feature-flag package-flag--included"></span>
+                <span class="package__feature-flag package__feature-flag--included"></span>
+              </td>
+              <td class="package__feature">
+                <span class="package__feature-name">Розовый фильтр</span>
+                <span class="package__feature-flag package__feature-flag--included"></span>
+              </td>
+              <td class="package__feature">
+                <span class="package__feature-name">Розовый фильтр</span>
+                <span class="package__feature-flag package__feature-flag--included"></span>
               </td>
             </tr>
             <tr>
               <td class="package__feature">
                 <span class="package__feature-name">Смайлики</span>
-                <span class="package__feature-flag package-flag--included"></span>
+                <span class="package__feature-flag package__feature-flag--not-included"></span>
+              </td>
+              <td class="package__feature">
+                <span class="package__feature-name">Смайлики</span>
+                <span class="package__feature-flag package__feature-flag--included"></span>
+              </td>
+              <td class="package__feature">
+                <span class="package__feature-name">Смайлики</span>
+                <span class="package__feature-flag package__feature-flag--included"></span>
               </td>
             </tr>
             <tr>
               <td class="package__feature">
                 <span class="package__feature-name">Комментарии</span>
-                <span class="package__feature-flag package-flag--not-included"></span>
+                <span class="package__feature-flag package__feature-flag--not-included"></span>
+              </td>
+              <td class="package__feature">
+                <span class="package__feature-name">Комментарии</span>
+                <span class="package__feature-flag package__feature-flag--not-included"></span>
+              </td>
+              <td class="package__feature">
+                <span class="package__feature-name">Комментарии</span>
+                <span class="package__feature-flag package__feature-flag--included"></span>
               </td>
             </tr>
           </table>
-          <div class="slider-controls">
+          <div class="package__controls slider-controls">
             <button class="slider-controls__btn" type="button" aria-label="Слайд 1"></button>
             <button class="slider-controls__btn" type="button" aria-label="Слайд 2"></button>
             <button class="slider-controls__btn" type="button" aria-label="Слайд 3"></button>
@@ -156,26 +200,26 @@
           Остались вопросы? Свяжитесь с нами!
         </h2>
         <section class="contacts__wrapper">
-          <h3 class="contacts__title">
+          <b class="contacts__title">
             Звоните:
-          </h3>
+          </b>
           <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </section>
         <section class="contacts__wrapper">
-          <h3 class="contacts__title">
+          <b class="contacts__title">
             Пишите:
-          </h3>
+          </b>
           <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </section>
         <section class="contacts__wrapper">
-          <h3 class="contacts__title">
+          <b class="contacts__title">
             Приезжайте в гости:
-          </h3>
+          </b>
           <p class="contacts__info">
             ул. Большая Конюшенная, 19/8
           </p>
         </section>
-        <img class="contacts__map" src="https://via.placeholder.com/320x645" alt="Карта проезда в офис по адресу ул. Большая Конюшенная, 19/8">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CKu7BI-5" width="320" height="645" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
       </div>
     </footer>
   </body>
