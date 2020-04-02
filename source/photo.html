@@ -33,95 +33,128 @@
         <h1 class="page-header__title">Фотографии пользователей</h1>
       </div>
     </header>
-    <main class="photo-content">
-      <h2 class="photo-content__title">
-        Взгляните на фотографии, которые выкладывают пользователи!
-        Видите, как не хватает ваших?
-      </h2>
-      <div class="photo-content__wrapper">
-        <article class="feed-item photo-content__item">
-          <img class="feed-item__photo" src="https://via.placeholder.com/320x137" alt="Панорама моста SkyBridge" width="320" height="137">
-          <div class="feed-item__photo-of-the-day">
-            Панорама дня
+    <main class="page-main">
+      <section class="photo-feed">
+        <h2 class="photo-feed__title">
+          Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
+        </h2>
+        <div class="photo-feed__wrapper">
+          <article class="feed-item photo-feed__item">
+            <img class="feed-item__photo" src="https://via.placeholder.com/320x137" alt="Панорама моста SkyBridge" width="320" height="137">
+            <div class="feed-item__photo-of-the-day">
+              Панорама дня
+            </div>
+            <h3 class="feed-item__title">
+              <span class="feed-item__author">Анна</span>
+              <span class="feed-item__time">(5 минут назад)</span>
+            </h3>
+            <p class="feed-item__text">
+              Прыгать или нет? Напишите в комментарии свой совет и смотрите
+              прямую трансляцию в перископе, задавайте свои вопросы!
+            </p>
+            <button class="feed-item__likes-btn" type="button">
+              Нравится: <span class="feed-item__likes-count">215</span>
+            </button>
+          </article>
+          <article class="feed-item photo-feed__item">
+            <img class="feed-item__photo" src="https://via.placeholder.com/280x180" alt="Фотография автомобиля" width="280" height="180">
+            <h3 class="feed-item__title">
+              <span class="feed-item__author">Левон</span>
+              <span class="feed-item__time">(5 часов назад)</span>
+            </h3>
+            <p class="feed-item__text">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </p>
+            <button class="feed-item__likes-btn" type="button">
+              Нравится: <span class="feed-item__likes-count">356</span>
+            </button>
+          </article>
+          <article class="feed-item photo-feed__item">
+            <img class="feed-item__photo" src="https://via.placeholder.com/280x180" alt="Фотография барабанной установки" width="280" height="180">
+            <h3 class="feed-item__title">
+              <span class="feed-item__author">Антон</span>
+              <span class="feed-item__time">(12 часов назад)</span>
+            </h3>
+            <p class="feed-item__text">
+              Соседи будут рады!
+            </p>
+            <button class="feed-item__likes-btn" type="button">
+              Нравится: <span class="feed-item__likes-count">666</span>
+            </button>
+          </article>
+          <article class="feed-item photo-feed__item">
+            <img class="feed-item__photo" src="https://via.placeholder.com/280x180" alt="Фотография кубанской бахчи" width="280" height="180">
+            <h3 class="feed-item__title">
+              <span class="feed-item__author">Сергей</span>
+              <span class="feed-item__time">(25 часов назад)</span>
+            </h3>
+            <p class="feed-item__text">
+              Самая кубанская в мире!
+            </p>
+            <button class="feed-item__likes-btn" type="button">
+              Нравится: <span class="feed-item__likes-count">4</span>
+            </button>
+          </article>
+          <article class="feed-item photo-feed__item">
+            <img class="feed-item__photo" src="https://via.placeholder.com/280x180" alt="Фотография ног на фоне гор" width="280" height="180">
+            <h3 class="feed-item__title">
+              <span class="feed-item__author">Максим</span>
+              <span class="feed-item__time">(40 часов назад)</span>
+            </h3>
+            <p class="feed-item__text">
+              Где снег-то?
+            </p>
+            <button class="feed-item__likes-btn" type="button">
+              Нравится: <span class="feed-item__likes-count">150</span>
+            </button>
+          </article>
+          <article class="feed-item photo-feed__item">
+            <img class="feed-item__photo" src="https://via.placeholder.com/280x180" alt="Фотография крыла самолета на фоне рассвета" width="280" height="180">
+            <h3 class="feed-item__title">
+              <span class="feed-item__author">Надежда</span>
+              <span class="feed-item__time">(45 часов назад)</span>
+            </h3>
+            <p class="feed-item__text">
+              Всем GM и взаимные лайки!
+            </p>
+            <button class="feed-item__likes-btn" type="button">
+              Нравится: <span class="feed-item__likes-count">2560</span>
+            </button>
+          </article>
+        </div>
+      </section>
+      <section class="photo-upload">
+        <h2 class="photo-upload__title">
+          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        </h2>
+        <form class="photo-upload__form" action="https://echo.htmlacademy.ru" method="post">
+          <img class="photo-upload__preview" src="https://via.placeholder.com/280x374" width="280" height="374" alt="Фотография заснеженной дороги">
+          <div class="photo-upload__tools">
+            <div class="photo-upload__tools-btn">
+              <button class="photo-upload__filter" type="button">
+                <span class="visually-hidden">Обрезка</span>
+              </button>
+              <button class="photo-upload__filter" type="button">
+                <span class="visually-hidden">Заливка</span>
+              </button>
+              <button class="photo-upload__filter" type="button">
+                <span class="visually-hidden">Контраст</span>
+              </button>
+              <div class="photo-upload__controls filter-controls">
+                <div class="filter-controls__scale">
+                  <div class="filter-controls__bar"></div>
+                </div>
+                <button class="filter-controls__toggle" type="button"></button>
+              </div>
+            </div>
           </div>
-          <h3 class="feed-item__title">
-            <span class="feed-item__author">Анна</span>
-            <span class="feed-item__time">(5 минут назад)</span>
-          </h3>
-          <p class="feed-item__text">
-            Прыгать или нет? Напишите в комментарии свой совет и смотрите
-            прямую трансляцию в перископе, задавайте свои вопросы!
-          </p>
-          <button class="feed-item__likes-btn" type="button">
-            <span class="feed-item__likes-count">Нравится: 215</span>
-          </button>
-        </article>
-        <article class="feed-item photo-content__item">
-          <img class="feed-item__photo" src="https://via.placeholder.com/280x180" alt="Фотография автомобиля" width="280" height="180">
-          <h3 class="feed-item__title">
-            <span class="feed-item__author">Левон</span>
-            <span class="feed-item__time">(5 часов назад)</span>
-          </h3>
-          <p class="feed-item__text">
-            Вчера он на луну летал, сегодня в руки к нам попал.
-          </p>
-          <button class="feed-item__likes-btn" type="button">
-            <span class="feed-item__likes-count">Нравится: 356</span>
-          </button>
-        </article>
-        <article class="feed-item photo-content__item">
-          <img class="feed-item__photo" src="https://via.placeholder.com/280x180" alt="Фотография барабанной установки" width="280" height="180">
-          <h3 class="feed-item__title">
-            <span class="feed-item__author">Антон</span>
-            <span class="feed-item__time">(12 часов назад)</span>
-          </h3>
-          <p class="feed-item__text">
-            Соседи будут рады!
-          </p>
-          <button class="feed-item__likes-btn" type="button">
-            <span class="feed-item__likes-count">Нравится: 666</span>
-          </button>
-        </article>
-        <article class="feed-item photo-content__item">
-          <img class="feed-item__photo" src="https://via.placeholder.com/280x180" alt="Фотография кубанской бахчи" width="280" height="180">
-          <h3 class="feed-item__title">
-            <span class="feed-item__author">Сергей</span>
-            <span class="feed-item__time">(25 часов назад)</span>
-          </h3>
-          <p class="feed-item__text">
-            Самая кубанская в мире!
-          </p>
-          <button class="feed-item__likes-btn" type="button">
-            <span class="feed-item__likes-count">Нравится: 4</span>
-          </button>
-        </article>
-        <article class="feed-item photo-content__item">
-          <img class="feed-item__photo" src="https://via.placeholder.com/280x180" alt="Фотография ног на фоне гор" width="280" height="180">
-          <h3 class="feed-item__title">
-            <span class="feed-item__author">Максим</span>
-            <span class="feed-item__time">(40 часов назад)</span>
-          </h3>
-          <p class="feed-item__text">
-            Где снег-то?
-          </p>
-          <button class="feed-item__likes-btn" type="button">
-            <span class="feed-item__likes-count">Нравится: 150</span>
-          </button>
-        </article>
-        <article class="feed-item photo-content__item">
-          <img class="feed-item__photo" src="https://via.placeholder.com/280x180" alt="Фотография крыла самолета на фоне рассвета" width="280" height="180">
-          <h3 class="feed-item__title">
-            <span class="feed-item__author">Надежда</span>
-            <span class="feed-item__time">(45 часов назад)</span>
-          </h3>
-          <p class="feed-item__text">
-            Всем GM и взаимные лайки!
-          </p>
-          <button class="feed-item__likes-btn" type="button">
-            <span class="feed-item__likes-count">Нравится: 2560</span>
-          </button>
-        </article>
-      </div>
+          <div class="photo-upload__submit-form">
+            <input class="photo-upload__btn photo-upload__btn--submit" type="submit" value="Запостить">
+            <button class="photo-upload__btn photo-upload__btn--cancel" type="button">Отмена</button>
+          </div>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__container">
