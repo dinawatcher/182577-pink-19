@@ -3,18 +3,23 @@
   background-color: @dark-blue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page-header__top {
   min-height: 70px;
+  background-color: fade(@black, 30%);
 }
 
 .page-header__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__head { /* плохое временное название */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 22px 18px 20px 20px;
-  border-bottom: 1px solid @black;
-  background-color: fade(@black, 30%);
 }
 
 .page-header__toggle {
@@ -31,7 +36,7 @@
 .page-header__bottom--index {
   min-height: 400px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-position: bottom left;
+  background-position: bottom center;
   background-repeat: no-repeat;
 }
 
