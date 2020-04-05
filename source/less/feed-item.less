@@ -1,0 +1,54 @@
+.feed-item {
+  margin-bottom: 20px;
+  background-color: @light-grey;
+}
+
+.feed-item:first-child {
+  position: relative;
+}
+
+.feed-item__photo-of-the-day {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 140px;
+  padding: 8px 0;
+  color: @white;
+  background-color: @pink;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.feed-item__wrapper {
+  padding: 25px 7px 25px 17px;
+}
+
+.feed-item__title {
+  .margin-reset();
+}
+
+.feed-item__author {
+  font-size: 14px;
+}
+
+.feed-item__time {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.feed-item__text {
+  .margin-reset();
+  margin-bottom: 15px;
+}
+
+.feed-item__likes-btn {
+  padding: 0;
+  color: @pink;
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
