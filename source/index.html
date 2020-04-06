@@ -3,224 +3,244 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк - Главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="contest.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="page-header__bottom">
-        <h1 class="page-header__title">Взгляните на жизнь иначе!</h1>
-      </div>
-      <div class="download-app">
-        <div class="download-app__wrapper">
-          <a class="download-app__link" href="#">Скачать приложение</a>
-          <div class="download-app__list">
-            <a class="download-app__store-link" href="#">
-              <img src="https://via.placeholder.com/47x56" alt="Ссылка на App Store" width="47" height="56">
-            </a>
-            <a class="download-app__store-link" href="#">
-              <img src="https://via.placeholder.com/43x47" alt="Ссылка на Play Market" width="43" height="47">
-            </a>
-            <a class="download-app__store-link" href="#">
-              <img src="https://via.placeholder.com/44x41" alt="Ссылка на Microsoft Store" width="44" height="41">
-            </a>
+        <div class="page-header__top">
+          <div class="page-header__wrapper">
+            <div class="page-header__head">
+              <a class="page-header__logo">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="75px" height="22px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+                  <g>
+                    <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+                    <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+                    <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+                    <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+                  </g>
+                </svg>
+              </a>
+              <button class="page-header__toggle" type="button" aria-label="Меню">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+                  <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+                </svg>
+              </button>
+            </div>
           </div>
-          <p class="download-app__available-versions">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
+          <nav class="main-nav">
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--active">
+                  <a>Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="photo.html">Фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="contest.html">Конкурс</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-      </div>
-    </header>
-    <main class="page-main">
-      <div class="slogan">
-        <div class="slogan__wrapper">
-          <p>
-            Устали от серости мегаполиса?
-          </p>
-          <p>
-            Нам есть, что вам предложить!
-          </p>
+        <div class="page-header__bottom page-header__bottom--index">
+          <div class="page-header__wrapper">
+            <h1 class="page-header__title">Взгляните на жизнь иначе!</h1>
+          </div>
         </div>
-      </div>
-      <div class="features">
-        <div class="features__wrapper">
-          <section class="features__item">
-            <h2 class="features__title">
-              Поднимает настроение
-            </h2>
-            <p class="features__desc">
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+      </header>
+      <main class="page-main">
+        <div class="download-app">
+          <div class="download-app__wrapper">
+            <a class="btn-round download-app__link" href="#">Скачать приложение</a>
+            <div class="download-app__list">
+              <a class="download-app__store-link" href="#">
+                <img src="img/logo-apple.svg" alt="Ссылка на App Store" width="47" height="56">
+              </a>
+              <a class="download-app__store-link" href="#">
+                <img src="img/logo-android.svg" alt="Ссылка на Play Market" width="43" height="47">
+              </a>
+              <a class="download-app__store-link" href="#">
+                <img src="img/logo-microsoft.svg" alt="Ссылка на Microsoft Store" width="44" height="41">
+              </a>
+            </div>
+            <p class="download-app__available-versions">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
             </p>
-          </section>
-          <section class="features__item">
-            <h2 class="features__title">
-              Меняет мир вокруг
-            </h2>
-            <p class="features__desc">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
-          </section>
-          <section class="features__item">
-            <h2 class="features__title">
-              Заводит новых друзей
-            </h2>
-            <p class="features__desc">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </section>
+          </div>
         </div>
-      </div>
-      <div class="reviews">
-        <div class="reviews__wrapper">
-          <div class="reviews__list">
-            <section class="reviews__item reviews__item--active review">
-              <h2 class="review__author">
-                Николай Петров
+        <div class="slogan">
+          <div class="slogan__wrapper">
+            <p class="slogan__text">
+              Устали от серости мегаполиса?
+            </p>
+            <p class="slogan__text">
+              Нам есть, что вам предложить!
+            </p>
+          </div>
+        </div>
+        <div class="features">
+          <div class="features__wrapper">
+            <section class="features__item">
+              <h2 class="features__title">
+                Поднимает настроение
               </h2>
-              <p class="review__text">
-                &laquo;Это приложение перевернуло мой мир и позволило
-                по-новому взглянуть на привычные серые вещи! А еще я познакомился
-                со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+              <p class="features__desc">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
               </p>
             </section>
-            <section class="reviews__item reviews__item review"></section>
-            <section class="reviews__item reviews__item review"></section>
-          </div>
-          <div class="reviews__controls slider-controls">
-            <button class="slider-controls__btn" type="button" aria-label="Слайд 1"></button>
-            <button class="slider-controls__btn" type="button" aria-label="Слайд 2"></button>
-            <button class="slider-controls__btn" type="button" aria-label="Слайд 3"></button>
-          </div>
-        </div>
-      </div>
-      <div class="package">
-        <div class="package__wrapper">
-          <table class="package__table">
-            <tr>
-              <th class="package__header">
-                <p class="package__title">
-                  База
-                </p>
-                <p class="package__price">
-                  1,99 USD
-                </p>
-              </th>
-              <th class="package__header">
-                <p class="package__title">
-                  Стандарт
-                </p>
-                <p class="package__price">
-                  3,99 USD
-                </p>
-                <span class="package__hit">Хит</span>
-              </th>
-              <th class="package__header">
-                <p class="package__title">
-                  Анлим
-                </p>
-                <p class="package__price">
-                  9,99 USD
-                </p>
-              </th>
-            </tr>
-            <tr>
-              <td class="package__feature">
-                <span class="package__feature-name">Розовый фильтр</span>
-                <span class="package__feature-flag package__feature-flag--included"></span>
-              </td>
-              <td class="package__feature">
-                <span class="package__feature-name">Розовый фильтр</span>
-                <span class="package__feature-flag package__feature-flag--included"></span>
-              </td>
-              <td class="package__feature">
-                <span class="package__feature-name">Розовый фильтр</span>
-                <span class="package__feature-flag package__feature-flag--included"></span>
-              </td>
-            </tr>
-            <tr>
-              <td class="package__feature">
-                <span class="package__feature-name">Смайлики</span>
-                <span class="package__feature-flag package__feature-flag--not-included"></span>
-              </td>
-              <td class="package__feature">
-                <span class="package__feature-name">Смайлики</span>
-                <span class="package__feature-flag package__feature-flag--included"></span>
-              </td>
-              <td class="package__feature">
-                <span class="package__feature-name">Смайлики</span>
-                <span class="package__feature-flag package__feature-flag--included"></span>
-              </td>
-            </tr>
-            <tr>
-              <td class="package__feature">
-                <span class="package__feature-name">Комментарии</span>
-                <span class="package__feature-flag package__feature-flag--not-included"></span>
-              </td>
-              <td class="package__feature">
-                <span class="package__feature-name">Комментарии</span>
-                <span class="package__feature-flag package__feature-flag--not-included"></span>
-              </td>
-              <td class="package__feature">
-                <span class="package__feature-name">Комментарии</span>
-                <span class="package__feature-flag package__feature-flag--included"></span>
-              </td>
-            </tr>
-          </table>
-          <div class="package__controls slider-controls">
-            <button class="slider-controls__btn" type="button" aria-label="Слайд 1"></button>
-            <button class="slider-controls__btn" type="button" aria-label="Слайд 2"></button>
-            <button class="slider-controls__btn" type="button" aria-label="Слайд 3"></button>
+            <section class="features__item">
+              <h2 class="features__title">
+                Меняет мир вокруг
+              </h2>
+              <p class="features__desc">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </section>
+            <section class="features__item">
+              <h2 class="features__title">
+                Заводит новых друзей
+              </h2>
+              <p class="features__desc">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </section>
           </div>
         </div>
-      </div>
-    </main>
-    <footer class="contacts">
-      <div class="contacts__wrapper">
-        <h2 class="contacts__header">
-          Остались вопросы? Свяжитесь с нами!
-        </h2>
-        <section class="contacts__wrapper">
-          <b class="contacts__title">
-            Звоните:
-          </b>
-          <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </section>
-        <section class="contacts__wrapper">
-          <b class="contacts__title">
-            Пишите:
-          </b>
-          <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </section>
-        <section class="contacts__wrapper">
-          <b class="contacts__title">
-            Приезжайте в гости:
-          </b>
-          <p class="contacts__info">
-            ул. Большая Конюшенная, 19/8
-          </p>
-        </section>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CKu7BI-5" width="320" height="645" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-      </div>
-    </footer>
+        <div class="reviews">
+          <div class="reviews__wrapper">
+            <div class="reviews__list">
+              <section class="reviews__item reviews__item--active review">
+                <h2 class="review__author">
+                  Николай Петров
+                </h2>
+                <p class="review__text">
+                  &laquo;Это приложение перевернуло мой мир и позволило
+                  по-новому взглянуть на привычные серые вещи! А еще я познакомился
+                  со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+                </p>
+              </section>
+              <section class="reviews__item reviews__item review"></section>
+              <section class="reviews__item reviews__item review"></section>
+            </div>
+            <div class="reviews__controls slider-controls">
+              <button class="slider-controls__btn" type="button" aria-label="Слайд 1"></button>
+              <button class="slider-controls__btn" type="button" aria-label="Слайд 2"></button>
+              <button class="slider-controls__btn" type="button" aria-label="Слайд 3"></button>
+            </div>
+          </div>
+        </div>
+        <div class="package">
+          <div class="package__wrapper">
+            <table class="package__table">
+              <tr>
+                <th class="package__header">
+                  <p class="package__title">
+                    База
+                  </p>
+                  <p class="package__price">
+                    1,99 USD
+                  </p>
+                </th>
+                <th class="package__header">
+                  <p class="package__title">
+                    Стандарт
+                  </p>
+                  <p class="package__price">
+                    3,99 USD
+                  </p>
+                  <span class="package__hit">Хит</span>
+                </th>
+                <th class="package__header">
+                  <p class="package__title">
+                    Анлим
+                  </p>
+                  <p class="package__price">
+                    9,99 USD
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <td class="package__feature">
+                  <span class="package__feature-name">Розовый фильтр</span>
+                  <span class="package__feature-flag package__feature-flag--included"></span>
+                </td>
+                <td class="package__feature">
+                  <span class="package__feature-name">Розовый фильтр</span>
+                  <span class="package__feature-flag package__feature-flag--included"></span>
+                </td>
+                <td class="package__feature">
+                  <span class="package__feature-name">Розовый фильтр</span>
+                  <span class="package__feature-flag package__feature-flag--included"></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="package__feature">
+                  <span class="package__feature-name">Смайлики</span>
+                  <span class="package__feature-flag package__feature-flag--not-included"></span>
+                </td>
+                <td class="package__feature">
+                  <span class="package__feature-name">Смайлики</span>
+                  <span class="package__feature-flag package__feature-flag--included"></span>
+                </td>
+                <td class="package__feature">
+                  <span class="package__feature-name">Смайлики</span>
+                  <span class="package__feature-flag package__feature-flag--included"></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="package__feature">
+                  <span class="package__feature-name">Комментарии</span>
+                  <span class="package__feature-flag package__feature-flag--not-included"></span>
+                </td>
+                <td class="package__feature">
+                  <span class="package__feature-name">Комментарии</span>
+                  <span class="package__feature-flag package__feature-flag--not-included"></span>
+                </td>
+                <td class="package__feature">
+                  <span class="package__feature-name">Комментарии</span>
+                  <span class="package__feature-flag package__feature-flag--included"></span>
+                </td>
+              </tr>
+            </table>
+            <div class="package__controls slider-controls">
+              <button class="slider-controls__btn" type="button" aria-label="Слайд 1"></button>
+              <button class="slider-controls__btn" type="button" aria-label="Слайд 2"></button>
+              <button class="slider-controls__btn" type="button" aria-label="Слайд 3"></button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__header">
+            Остались вопросы? Свяжитесь с нами!
+          </h2>
+          <section class="contacts__wrapper">
+            <b class="contacts__title">
+              Звоните:
+            </b>
+            <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </section>
+          <section class="contacts__wrapper">
+            <b class="contacts__title">
+              Пишите:
+            </b>
+            <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </section>
+          <section class="contacts__wrapper">
+            <b class="contacts__title">
+              Приезжайте в гости:
+            </b>
+            <p class="contacts__info">
+              ул. Большая Конюшенная, 19/8
+            </p>
+          </section>
+          <iframe src="https://yandex.ru/map-widget/v1/-/CKu7BI-5" width="320" height="645" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+      </footer>
   </body>
 </html>
