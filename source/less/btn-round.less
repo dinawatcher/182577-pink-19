@@ -1,12 +1,27 @@
 .btn-round {
   display: block;
+  width: 100%;
   padding: 20px 0;
+  margin-bottom: 10px;
   border: 3px solid;
   border-radius: 30px;
-  color: @white;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   text-align: center;
   text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-round--white {
+  color: @white;
+}
+
+.btn-round--pink {
+  color: @pink;
+}
+
+.btn-round--light {
+  color: fade(@dark-blue, 10%);
 }
