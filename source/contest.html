@@ -59,9 +59,9 @@
           1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
         </h2>
         <form class="contest-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="contest-form__field">
+          <fieldset class="contest-form__field"> 
+            <legend class="visually-hidden">Ваши ФИО</legend>
             <div class="contest-form__wrapper">
-              <legend class="visually-hidden">Ваши ФИО</legend>
               <ul class="contest-form__list">
                 <li class="contest-form__list-item contest-form__text-item">
                   <label class="contest-form__caption" for="last-name">Фамилия:</label>
@@ -73,14 +73,14 @@
                 </li>
                 <li class="contest-form__list-item contest-form__text-item">
                   <label class="contest-form__caption" for="patronymic">Отчество:</label>
-                  <input type="text" name="patronymic" placeholder="Ну и отчество тоже">
+                  <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
                 </li>
               </ul>
             </div>
           </fieldset>
           <fieldset class="contest-form__field contest-form__field--box">
+            <legend class="contest-form__title">Ваши безбашенные достижения в путешествии</legend>
             <div class="contest-form__wrapper">
-              <legend class="contest-form__title">Ваши безбашенные достижения в путешествии</legend>
               <ul class="contest-form__list">
                 <li class="contest-form__list-item contest-form__box-item">
                   <label class="contest-form__label contest-form__label--checkbox">
@@ -168,9 +168,9 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="contest-form__field">
+          <fieldset class="contest-form__field contest-form__field--textarea">
+            <legend class="contest-form__title">Опишите свои эмоции</legend>
             <div class="contest-form__wrapper">
-              <legend class="contest-form__title">Опишите свои эмоции</legend>
               <textarea name="emotion-text" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>

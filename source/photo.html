@@ -162,7 +162,10 @@
             Затмите их всех! Выкладывайте все, что накопилось в телефоне!
           </h2>
           <form class="photo-upload__form" action="https://echo.htmlacademy.ru" method="post">
-            <img class="photo-upload__preview" src="../img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фотография заснеженной дороги">
+            <div class="photo-upload__block">
+              <input class="photo-upload__field" type="file" name="upload-file" id="upload-file">
+              <label class="photo-upload__back" for="upload-file"></label>
+            </div>
             <div class="photo-upload__tools">
               <div class="photo-upload__tools-btn">
                 <button class="photo-upload__filter" type="button">

@@ -7,24 +7,6 @@
   margin: 0 auto;
 }
 
-.contacts__container:last-of-type {
-  position: relative;
-}
-
-.contacts__container:last-of-type::after {
-  content: "";
-  z-index: 200;
-  position: absolute;
-  bottom: -42px;
-  display: block;
-  width: 320px;
-  height: 123px;
-  background-image: url("../img/bg-triangle-white-footer.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-}
-
 .contacts__header {
   font-size: 24px;
   font-weight: 300;
@@ -45,6 +27,24 @@
   font-size: 24px;
   font-weight: 300;
   text-decoration: none;
+}
+
+.contacts__map {
+  position: relative;
+  background-image: url("../img/bg-map-mobile@1x.png");
+}
+
+.contacts__map::before {
+  content: "";
+  z-index: 200;
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 320px;
+  height: 123px;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .contacts iframe {

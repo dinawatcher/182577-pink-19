@@ -6,14 +6,16 @@
   background-size: contain;
 }
 
-// .package__wrapper {
-//   max-width: 320px;
-//   margin: 0 auto;
-// }
+.package__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
 .package__table {
-  margin: 0 auto;
+  width: calc(300% - 120px);
   border-color: @dark-grey;
+  transform: translateX(-33.333333%) translateX(20px);
 }
 
 .package__table-header {

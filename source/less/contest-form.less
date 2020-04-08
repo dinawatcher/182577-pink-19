@@ -1,11 +1,17 @@
 .contest-form__field {
+  position: relative;
   padding: 40px 30px 20px;
   .margin-reset();
   border: none;
 }
 
 .contest-form__field--box {
+  padding-top: 95px;
   background-color: @light-grey;
+}
+
+.contest-form__field--textarea {
+  padding-top: 65px;
 }
 
 .contest-form__wrapper {
@@ -14,7 +20,12 @@
 }
 
 .contest-form__title {
-  padding: 0 40px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 320px;
+  padding: 0 30px;
   color: @pink;
   text-align: center;
   text-transform: uppercase;
@@ -37,7 +48,7 @@
 }
 
 .contest-form__text-item {
-margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .contest-form__box-item {
@@ -46,6 +57,7 @@ margin-bottom: 25px;
 
 .contest-form__text-item input {
   width: 100%;
+  height: 60px;
   padding: 15px 20px;
   border: 2px solid @dark-grey;
 }
@@ -65,6 +77,7 @@ margin-bottom: 25px;
 .contest-form__field textarea {
   width: 100%;
   padding: 20px;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
 .contest-form__field textarea::placeholder {
