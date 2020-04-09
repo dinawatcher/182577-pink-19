@@ -1,0 +1,69 @@
+.package {
+  padding: 100px 0 0 0;
+  background-color: @light-grey;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.package__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.package__table {
+  width: calc(300% - 120px);
+  border-color: @dark-grey;
+  transform: translateX(-33.333333%) translateX(20px);
+}
+
+.package__table-header {
+  color: @white;
+  background-color: @dark-blue;
+}
+
+.package__header {
+  position: relative;
+  padding: 15px 0;
+}
+
+.package__title {
+  .margin-reset();
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.package__price {
+  .margin-reset();
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.package__hit {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.package td {
+  width: 280px;
+  border-color: @dark-grey;
+}
+
+.package__feature {
+  padding: 12px 22px;
+  background-color: @white;
+}
+
+.package__feature-name {
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.package__controls {
+  text-align: center;
+}
