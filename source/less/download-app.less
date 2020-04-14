@@ -1,12 +1,13 @@
 .download-app {
+  z-index: 10;
   padding-top: 25px;
   background-color: @dark-blue;
 }
 
 .download-app__wrapper {
   max-width: 320px;
-  margin: 0 auto;
   padding: 0 20px 30px;
+  margin: 0 auto;
 }
 
 .download-app__list {
@@ -21,4 +22,22 @@
   color: @white;
   text-align: center;
   font-weight: 300;
+}
+
+@media (min-width: @tablet-width) {
+  .download-app {
+    width: 50%;
+    background-color: transparent;
+  }
+
+  .download-app__available-versions {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-app__list {
+    padding: 40px 0;
+  }
 }

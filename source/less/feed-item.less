@@ -4,6 +4,7 @@
 }
 
 .feed-item:first-child {
+  width: 100%;
   position: relative;
 }
 
@@ -51,4 +52,37 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .feed-item {
+    width: 300px;
+  }
+
+  .feed-item:nth-child(2n) {
+    margin-right: 20px;
+  }
+
+  .feed-item__photo-of-the-day {
+    top: 55px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feed-item {
+    margin-right: 20px;
+  }
+
+  .feed-item:first-child {
+    margin-right: 0;
+  }
+
+  .feed-item:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .feed-item:last-child {
+    margin-right: 0;
+  }
+
 }

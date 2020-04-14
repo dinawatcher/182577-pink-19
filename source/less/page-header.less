@@ -6,38 +6,33 @@
   background-size: cover;
 }
 
-.page-header__top {
-  min-height: 70px;
-  background-color: fade(@black, 30%);
-}
-
 .page-header__wrapper {
   max-width: 320px;
   margin: 0 auto;
 }
 
-.page-header__head { /* плохое временное название */
-  display: flex;
-  justify-content: space-around;
-  padding: 22px 18px 20px 20px;
-}
-
-.page-header__toggle {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
 .page-header__bottom {
-  padding: 30px 0 50px;
+  position: relative;
+  padding: 30px 0;
 }
 
-.page-header__bottom--index {
-  min-height: 400px;
+.page-header__title-block--index {
+  padding-bottom: 310px;
+}
+
+.page-header__bottom--index::after {
+  content: "";
+  position: absolute;
+  top: 75px;
+  left: 45%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 320px;
+  height: 314px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-position: bottom center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .page-header__title {
@@ -47,4 +42,75 @@
   text-align: center;
   font-size: 24px;
   font-weight: 300;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .page-header__wrapper {
+    max-width: 660px;
+  }
+
+  .page-header__bottom {
+    padding: 70px;
+  }
+
+  .page-header__bottom--index {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 600px;
+  }
+
+  .page-header__title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .page-header__title--index {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .page-header__title-block--index {
+    width: 50%;
+    padding-bottom: 0;
+  }
+  
+  .page-header__bottom--index::after {
+    width: 887px;
+    height: 545px;
+    top: 55px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+  
+  .page-header__wrapper {
+    max-width: 1200px;
+  }
+
+  .page-header__title {
+    padding: 50px 20px;
+    font-size: 50px;
+    line-height: 65px;
+  }
+
+  .page-header__bottom--index {
+    min-height: 700px;
+  }
+
+  .page-header__bottom--index::after {
+    width: 1050px;
+    height: 645px;
+    top: 61px;
+    left: 50%;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+  }
 }
