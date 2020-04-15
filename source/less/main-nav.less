@@ -58,12 +58,14 @@
 @media (min-width: @desktop-width) {
   .main-nav {
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: fade(@black, 30%);
   }
 
   .main-nav__bar-wrapper {
     max-width: 1200px;
+    margin: 0;
   }
 
   .main-nav__toggle {
@@ -74,5 +76,15 @@
     display: flex;
     justify-content: space-around;
     width: 900px;
+  }
+
+  .main-nav__item {
+    border: none;
+  }
+
+  .main-nav__item a {
+    text-transform: none;
+    font-weight: 400;
+    line-height: 18px;
   }
 }
