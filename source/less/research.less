@@ -12,31 +12,24 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 620px;
     margin: 0 auto;
   }
 
   .research__timer {
-    position: relative;
     z-index: 10;
+    position: relative;
+    width: 202px;
+    height: 202px;
     .margin-reset();
-    padding: 10px 30px;
+    padding: 10px 30px 15px;
     color: @pink;
     border: 15px solid @pink;
     border-radius: 50%;
     font-size: 96px;
     font-weight: 700;
     line-height: 150px;
-  }
-
-  .research__icon {
-    z-index: 1;
-    position: absolute;
-    bottom: -21px;
-    left: -20px;
-    width: 238px;
-    height: 276px;
-    fill: @grey;
   }
 
   .research__info {
@@ -65,8 +58,10 @@
   }
 
   .research__timer {
+    width: 250px;
+    height: 250px;
     padding: 10px 40px;
-    border: 20px solid @pink;
+    border: 16px solid @pink;
     font-size: 120px;
     line-height: 187px;
   }

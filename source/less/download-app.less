@@ -1,5 +1,6 @@
 .download-app {
   z-index: 10;
+  position: relative;
   padding-top: 25px;
   background-color: @dark-blue;
 }
@@ -26,8 +27,13 @@
 
 @media (min-width: @tablet-width) {
   .download-app {
-    width: 50%;
+    max-width: 300px;
     background-color: transparent;
+  }
+
+  .download-app__wrapper {
+    max-width: 300px;
+    padding: 0 0 30px;
   }
 
   .download-app__available-versions {
@@ -38,6 +44,6 @@
 
 @media (min-width: @desktop-width) {
   .download-app__list {
-    padding: 40px 0;
+    padding: 50px 0;
   }
 }

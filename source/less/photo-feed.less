@@ -14,6 +14,10 @@
 
 @media (min-width: @tablet-width) {
   .photo-feed__title {
+    .margin-reset();
+    width: 620px;
+    padding: 100px 40px 60px;
+    margin: 0 auto;
     font-size: 18px;
   }
 
@@ -27,5 +31,10 @@
 @media (min-width: @desktop-width) {
   .photo-feed__wrapper {
     max-width: 980px;
+  }
+
+  .photo-feed__title {
+    width: 600px;
+    padding: 90px 10px 80px;
   }
 }
