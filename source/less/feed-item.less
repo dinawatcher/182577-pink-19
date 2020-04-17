@@ -1,11 +1,16 @@
 .feed-item {
-  margin-bottom: 20px;
   background-color: @light-grey;
 }
 
-.feed-item:first-child {
-  width: 100%;
+.feed-item--panorama {
   position: relative;
+  .feed-item__photo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    max-width: 1200px;
+  }
 }
 
 .feed-item__photo-of-the-day {
@@ -55,33 +60,11 @@
 }
 
 @media (min-width: @tablet-width) {
-  .feed-item {
-    width: 300px;
-  }
-
-  .feed-item:nth-child(2n) {
-    margin-right: 20px;
-  }
-
   .feed-item__photo-of-the-day {
     top: 55px;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .feed-item {
-    margin-right: 20px;
-  }
+// @media (min-width: @desktop-width) {
 
-  .feed-item--panorama {
-    margin-right: 0;
-  }
-
-  .feed-item:nth-child(3n+4) {
-    margin-right: 0;
-  }
-
-  .feed-item:last-child {
-    margin-right: 0;
-  }
-}
+// }

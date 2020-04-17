@@ -1,24 +1,24 @@
 .features {
-  position: relative;
   background-color: @light-grey;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.features::after {
+.features__wrapper {
+  position: relative;
+  max-width: 320px;
+  padding: 100px 30px 0;
+  margin: 0 auto;
+}
+
+.features__wrapper::after {
   content: "";
   display: block;
   height: 320px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: center 35px;
   background-repeat: no-repeat;
-}
-
-.features__wrapper {
-  max-width: 320px;
-  padding: 100px 30px 0;
-  margin: 0 auto;
 }
 
 .features__item {
@@ -57,11 +57,11 @@
     text-align: left;
   }
 
-  .features::after {
+  .features__wrapper::after {
     content: "";
     position: absolute;
     top: -14px;
-    left: 20px;
+    left: 0;
     width: 268px;
     height: 547px;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
@@ -78,7 +78,7 @@
     padding: 0;
   }
 
-  .features::after {
+  .features__wrapper::after {
     display: none;
   }
 

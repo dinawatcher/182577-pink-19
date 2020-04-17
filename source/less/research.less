@@ -32,6 +32,17 @@
     line-height: 150px;
   }
 
+  .research__timer::after {
+    content: "";
+    position: absolute;
+    left: -33px;
+    bottom: -33px;
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/icon-timer.svg");
+    background-size: contain;
+  }
+
   .research__info {
     width: 50%;
   }
@@ -54,20 +65,23 @@
   }
 
   .research__wrapper {
-    max-width: 940px;
+    max-width: 960px;
+    padding: 0 10px;
   }
 
   .research__timer {
     width: 250px;
     height: 250px;
     padding: 10px 40px;
+    margin-left: 20px;
     border: 16px solid @pink;
     font-size: 120px;
     line-height: 187px;
   }
 
-  .research__icon {
-    bottom: -25px;
+  .research__timer::after {
+    left: -40px;
+    bottom: -40px;
     width: 298px;
     height: 345px;
   }
