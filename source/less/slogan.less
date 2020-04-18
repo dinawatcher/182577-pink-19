@@ -16,3 +16,22 @@
 .slogan__text:not(:last-child) {
   margin-bottom: 30px;
 }
+
+@media (min-width: @tablet-width) {
+  .slogan__wrapper {
+    max-width: 620px;
+    padding: 50px 0;
+  }
+
+  .slogan__text {
+    padding: 0 10px;
+    font-size: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slogan__text {
+    font-size: 50px;
+    line-height: 65px;
+  }
+}

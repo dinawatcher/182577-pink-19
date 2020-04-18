@@ -1,23 +1,24 @@
 .features {
-  background-color: @dark-grey;
+  background-color: @light-grey;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.features::after {
+.features__wrapper {
+  position: relative;
+  max-width: 320px;
+  padding: 100px 30px 0;
+  margin: 0 auto;
+}
+
+.features__wrapper::after {
   content: "";
   display: block;
   height: 320px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: center 35px;
   background-repeat: no-repeat;
-}
-
-.features__wrapper {
-  max-width: 320px;
-  padding: 100px 30px 0;
-  margin: 0 auto;
 }
 
 .features__item {
@@ -34,4 +35,87 @@
 .features__desc {
   .margin-reset();
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .features__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 620px;
+    padding: 100px 30px 10px 300px;
+  }
+
+  .features__item {
+    max-width: 300px;
+  }
+
+  .features__title {
+    text-align: left;
+  }
+
+  .features__desc {
+    text-align: left;
+  }
+
+  .features__wrapper::after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 0;
+    width: 268px;
+    height: 547px;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 940px;
+    padding: 0;
+  }
+
+  .features__wrapper::after {
+    display: none;
+  }
+
+  .features__title {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .features__desc {
+    padding: 0 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .features__item {
+    padding-top: 350px;
+    margin-bottom: 30px;
+  }
+
+  .features__item--mood {
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  .features__item--change {
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  .features__item--friends {
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
 }

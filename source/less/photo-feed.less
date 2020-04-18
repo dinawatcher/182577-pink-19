@@ -11,3 +11,58 @@
   font-weight: 400;
   line-height: 30px;
 }
+
+.photo-feed__item {
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-feed__title {
+    .margin-reset();
+    width: 620px;
+    padding: 100px 40px 60px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .photo-feed__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 660px;
+  }
+
+  .photo-feed__item {
+    width: 300px;
+  }
+
+  .photo-feed-item:nth-child(2n) {
+    margin-right: 20px;
+  }
+
+  .photo-feed__item--fullwidth {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-feed__wrapper {
+    max-width: 980px;
+  }
+
+  .photo-feed__title {
+    width: 600px;
+    padding: 90px 10px 80px;
+  }
+
+  .photo-feed-item {
+    margin-right: 20px;
+  }
+
+  .photo-feed__item--fullwidth {
+    margin-right: 0;
+  }
+
+  .photo-feed-item:nth-child(3n+4) {
+    margin-right: 0;
+  }
+}
