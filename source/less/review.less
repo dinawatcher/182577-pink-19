@@ -1,7 +1,53 @@
+.review {
+  display: flex;
+  flex-direction: column;
+}
+
 .review__author {
   .margin-reset();
+  margin-bottom: 20px;
+  color: @black;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.review__prof {
+  .margin-reset();
+  display: none;
 }
 
 .review__text {
   .margin-reset();
+}
+
+@media (min-width: @tablet-width) {
+  .review__author {
+    order: 2;
+    margin-bottom: 5px;
+  }
+
+  .review__prof {
+    order: 3;
+  }
+
+  .review__text {
+    order: 1;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .review__prof {
+    display: block;
+  }  
+}
+
+@media (min-width: @desktop-width) {
+  .review__author {
+    font-size: 24px;
+  }
+
+  .review__prof {
+    font-size: 18px;
+  }
 }

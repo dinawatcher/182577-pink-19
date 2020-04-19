@@ -1,10 +1,7 @@
 .reviews__wrapper {
   max-width: 320px;
-  margin: 0 auto;
-}
-
-.reviews__list {
   padding: 40px 20px 25px;
+  margin: 0 auto;
 }
 
 .reviews__item {
@@ -13,4 +10,29 @@
 
 .reviews__controls {
   text-align: center;
+}
+
+.reviews__arrows {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    max-width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__wrapper {
+    max-width: 960px;
+  }
+
+  .reviews__item {
+    width: 820px;
+    margin: 0 auto;
+  }
+
+  .reviews__controls {
+    display: none;
+  }
 }

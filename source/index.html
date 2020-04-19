@@ -135,6 +135,9 @@
                 <h2 class="review__author">
                   Николай Петров
                 </h2>
+                <p class="review__prof">
+                  25 лет, водитель трамвая
+                </p>
                 <p class="review__text">
                   &laquo;Это приложение перевернуло мой мир и позволило
                   по-новому взглянуть на привычные серые вещи! А еще я познакомился
@@ -149,12 +152,18 @@
               <button class="slider-controls__btn" type="button" aria-label="Слайд 2"></button>
               <button class="slider-controls__btn" type="button" aria-label="Слайд 3"></button>
             </div>
+            <div class="reviews__arrows slider-arrows">
+              <button class="slider-arrows__icon" type="button" aria-label="Назад"></button>
+              <button class="slider-arrows__icon" type="button" aria-label="Вперед"></button>
+            </div>
           </div>
         </div>
         <div class="package">
           <div class="package__wrapper">
             <table class="package__table">
               <tr class="package__table-header">
+                <th class="package__header package__header--tablet">
+                </th>
                 <th class="package__header">
                   <p class="package__title">
                     База
@@ -182,6 +191,9 @@
                 </th>
               </tr>
               <tr>
+                <td class="package__feature package__feature--tablet">
+                  <span class="package__feature-name package__feature-name--tablet">Розовый фильтр</span>
+                </td>
                 <td class="package__feature">
                   <span class="package__feature-name">Розовый фильтр</span>
                   <span class="package__feature-flag package__feature-flag--included"></span>
@@ -196,13 +208,16 @@
                 </td>
               </tr>
               <tr>
-                <td class="package__feature">
-                  <span class="package__feature-name">Смайлики</span>
-                  <span class="package__feature-flag package__feature-flag--not-included"></span>
+                <td class="package__feature package__feature--tablet">
+                  <span class="package__feature-name package__feature-name--tablet">Смайлики</span>
                 </td>
                 <td class="package__feature">
                   <span class="package__feature-name">Смайлики</span>
                   <span class="package__feature-flag package__feature-flag--included"></span>
+                </td>
+                <td class="package__feature">
+                  <span class="package__feature-name">Смайлики</span>
+                  <span class="package__feature-flag package__feature-flag--not-included"></span>
                 </td>
                 <td class="package__feature">
                   <span class="package__feature-name">Смайлики</span>
@@ -210,9 +225,8 @@
                 </td>
               </tr>
               <tr>
-                <td class="package__feature">
-                  <span class="package__feature-name">Комментарии</span>
-                  <span class="package__feature-flag package__feature-flag--not-included"></span>
+                <td class="package__feature package__feature--tablet">
+                  <span class="package__feature-name package__feature-name--tablet">Комментарии</span>
                 </td>
                 <td class="package__feature">
                   <span class="package__feature-name">Комментарии</span>
@@ -221,6 +235,10 @@
                 <td class="package__feature">
                   <span class="package__feature-name">Комментарии</span>
                   <span class="package__feature-flag package__feature-flag--included"></span>
+                </td>
+                <td class="package__feature">
+                  <span class="package__feature-name">Комментарии</span>
+                  <span class="package__feature-flag package__feature-flag--not-included"></span>
                 </td>
               </tr>
             </table>
@@ -238,25 +256,27 @@
             <h2 class="contacts__header">
               Остались вопросы? Свяжитесь с нами!
             </h2>
-            <div class="contacts__container">
-              <b class="contacts__title">
-                Звоните:
-              </b>
-              <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </div>
-            <div class="contacts__container">
-              <b class="contacts__title">
-                Пишите:
-              </b>
-              <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </div>
-            <div class="contacts__container">
-              <b class="contacts__title">
-                Приезжайте в гости:
-              </b>
-              <p class="contacts__info">
-                ул. Большая Конюшенная, 19/8
-              </p>
+            <div class="contacts__info-wrapper">
+              <div class="contacts__container contacts__container--tel">
+                <b class="contacts__title">
+                  Звоните:
+                </b>
+                <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              </div>
+              <div class="contacts__container contacts__container--email">
+                <b class="contacts__title">
+                  Пишите:
+                </b>
+                <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </div>
+              <div class="contacts__container contacts__container--address">
+                <b class="contacts__title">
+                  Приезжайте в гости:
+                </b>
+                <p class="contacts__info">
+                  ул. Большая Конюшенная, 19/8
+                </p>
+              </div>
             </div>
             <div class="contacts__map">
               <iframe src="https://yandex.ru/map-widget/v1/-/CKu7BI-5" width="320" height="645" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
