@@ -29,22 +29,22 @@
               </button>
             </div>
           </div>
-           <ul class="main-nav__list">
-             <li class="main-nav__item main-nav__item--active">
-               <a href="index.html">Главная</a>
-             </li>
-             <li class="main-nav__item">
-               <a href="photo.html">Фотографии</a>
-             </li>
-             <li class="main-nav__item">
-               <a>Конкурс</a>
-             </li>
-             <li class="main-nav__item">
-               <a href="#">HTML Academy</a>
-             </li>
-           </ul>
-        </div>
-      </nav>
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a>Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         <div class="page-header__bottom">
           <div class="page-header__wrapper">
             <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
@@ -175,7 +175,7 @@
             </fieldset>
           </div>
           <div class="contest-form__wrapper contest-form__submit-wrapper">
-            <input class="contest-form__submit-btn" type="submit" value="Отправить форму">
+            <input class="btn-square" type="submit" value="Отправить форму">
             <p class="contest-form__text-required">
               <span class="contest-form__required-glyph">*</span> — обязательные поля
             </p>
@@ -239,5 +239,28 @@
         </div>
       </div>
     </footer>
+    <section class="popup">
+      <div class="popup__top">
+        <h2 class="popup__title">Что-то пошло не так!</h2>
+        <p class="popup__text">
+            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+      </div>
+      <div class="popup__bottom popup__bottom--error">
+        <button class="popup__error-btn btn-square" type="button">Ок</button>
+      </div>
+    </section>
+    <section class="popup">
+      <div class="popup__top">
+        <h2 class="popup__title">Ваша заявка отправлена</h2>
+        <p class="popup__text">          
+          Спасибо за ваше участие, ваша заявка уже поступила к нам. 
+          В ближайшее время мы рассмотрим ее и оповестим вас.
+        </p>
+      </div>
+      <div class="popup__bottom popup__bottom--success">
+        <button class="popup__success-btn btn-square" type="button">Закрыть окно</button>
+      </div>
+    </section>
   </body>
 </html>
