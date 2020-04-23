@@ -1,13 +1,13 @@
 .download-app {
   z-index: 10;
   position: relative;
-  padding-top: 25px;
+  padding-top: 28px;
   background-color: @dark-blue;
 }
 
 .download-app__wrapper {
   max-width: 320px;
-  padding: 0 20px 30px;
+  padding: 0 20px 0;
   margin: 0 auto;
 }
 
@@ -15,7 +15,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 280px;
   padding: 20px 0;
+  margin: 0 auto;
+}
+
+.download-app__link {
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .download-app__available-versions {
@@ -28,12 +35,22 @@
 @media (min-width: @tablet-width) {
   .download-app {
     max-width: 300px;
+    padding-top: 30px;
     background-color: transparent;
   }
 
   .download-app__wrapper {
     max-width: 300px;
     padding: 0 0 30px;
+  }
+
+  .download-app__list {
+    width: 300px;
+    margin-bottom: 7px;
+  }
+
+  .download-app__link {
+    margin-bottom: 27px;
   }
 
   .download-app__available-versions {

@@ -1,5 +1,5 @@
 .package {
-  padding: 100px 0 0 0;
+  padding: 88px 0 44px 0;
   background-color: @light-grey;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@
 
 .package__table {
   width: calc(300% - 120px);
-  border: 2px solid @dark-grey;
+  border-collapse: collapse;
   transform: translateX(-33.333333%) translateX(20px);
 }
 
@@ -24,7 +24,9 @@
 
 .package__header {
   position: relative;
-  padding: 15px 0;
+  padding: 15px 0 20px;
+  border: 2px solid @dark-grey;
+  overflow: hidden;
 }
 
 .package__header--tablet {
@@ -33,6 +35,7 @@
 
 .package__title {
   .margin-reset();
+  margin-bottom: 2px;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -48,18 +51,48 @@
 
 .package__hit {
   position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.package td {
-  width: 280px;
-  border-color: @dark-grey;
+  z-index: 20;
+  top: 14px;
+  left: -37px;
+  width: 120px;
+  padding-bottom: 3px;
+  background-color: @pink;
+  font-weight: 400;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+  cursor: default;
 }
 
 .package__feature {
-  padding: 12px 22px;
+  position: relative;
+  width: 280px;
+  padding: 14px 17px 15px 22px;
+  border: 2px solid @dark-grey;
   background-color: @white;
+}
+
+.package__included-feature::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  right: 17px;
+  width: 31px;
+  height: 21px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.package__not-included-feature::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  width: 27px;
+  height: 26px;
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .package__feature--tablet {
@@ -72,6 +105,7 @@
 }
 
 .package__controls {
+  padding-top: 30px;
   text-align: center;
 }
 

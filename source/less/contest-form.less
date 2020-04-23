@@ -6,11 +6,11 @@
   padding-top: 0;
 }
 
-.contest-form__achievments-wrapper {
+.contest-form__wrapper-achievments {
   background-color: @light-grey;
 }
 
-.contest-form__app-wrapper {
+.contest-form__wrapper--app {
   background-color: @light-grey;
 }
 
@@ -25,7 +25,7 @@
   border: none;
 }
 
-.contest-form__review-fieldset textarea {
+.contest-form__fieldset textarea {
   width: 280px;
   padding: 20px;
   border: 2px solid @dark-grey;
@@ -36,7 +36,7 @@
   line-height: 30px;
 }
 
-.contest-form__review-fieldset textarea::placeholder {
+.contest-form__fieldset textarea::placeholder {
   color: @dark-blue;
 }
 
@@ -69,6 +69,7 @@
   padding: 15px 20px;
   margin-bottom: 20px;
   border: 2px solid @dark-grey;
+  .input-border();
 }
 
 .contest-form__text-item input::placeholder {
@@ -108,24 +109,24 @@
     flex-wrap: wrap;
   }
 
-  .contest-form__name-wrapper {
+  .contest-form__wrapper--name {
     order: -3;
   }
 
-  .contest-form__app-wrapper {
+  .contest-form__wrapper--app {
     order: -2;
     background-color: inherit;
   }
 
-  .contest-form__achievments-wrapper {
+  .contest-form__wrapper-achievments {
     background-color: inherit;
   }
 
-  .contest-form__contacts-wrapper {
+  .contest-form__wrapper--contacts {
     order: -1;
   }
 
-  .contest-form__submit-wrapper {
+  .contest-form__wrapper--submit {
     display: flex;
     width: 620px;
     justify-content: space-between;
@@ -140,9 +141,13 @@
     border: 2px solid @dark-grey;
   }
 
-  .contest-form__name-fieldset {
+  .contest-form__fieldset--name {
     padding: 0;
     border: none;
+  }
+
+  .contest-form__title {
+    padding: 0 35px;
   }
 
   .contest-form__title--tablet {
@@ -159,7 +164,7 @@
     margin-right: 20px;
   }
 
-  .contest-form__review-fieldset textarea {
+  .contest-form__fieldset textarea {
     width: 100%;
   }
 
@@ -187,11 +192,11 @@
     width: 940px;
   }
   
-  .contest-form__name-fieldset {
+  .contest-form__fieldset--name {
     width: 455px;
   }
 
-  .contest-form__app-fieldset {
+  .contest-form__fieldset--app {
     width: 455px;
   }
 
@@ -199,6 +204,40 @@
   .contest-form__checkbox-list {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .contest-form__checkbox-item {
+    margin-left: auto;
+  }
+
+  .contest-form__checkbox-item:first-child {
+    order: -3;
+    width: 260px;
+  }
+
+  .contest-form__checkbox-item:nth-child(2) {
+    order: 1;
+    width: 260px;
+  }
+
+  .contest-form__checkbox-item:nth-child(3) {
+    order: -2;
+    width: 245px;
+  }
+
+  .contest-form__checkbox-item:nth-child(4) {
+    order: 2;
+    width: 245px;
+  }
+
+  .contest-form__checkbox-item:nth-child(5) {
+    order: -1;
+    width: 210px;
+  }
+
+  .contest-form__checkbox-item:last-child {
+    order: 3;
+    width: 210px;
   }
 
   .contest-form__name-item {
@@ -209,7 +248,7 @@
     margin-bottom: 0;
   }
 
-  .contest-form__submit-wrapper {
+  .contest-form__wrapper--submit {
     width: 940px;
   }
 }

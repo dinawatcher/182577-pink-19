@@ -8,25 +8,26 @@
 .features__wrapper {
   position: relative;
   max-width: 320px;
-  padding: 100px 30px 0;
+  padding: 79px 30px 0;
   margin: 0 auto;
 }
 
 .features__wrapper::after {
   content: "";
   display: block;
-  height: 320px;
+  height: 287px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-position: center 35px;
+  background-position: center 9px;
   background-repeat: no-repeat;
 }
 
 .features__item {
-  padding-bottom: 35px;
+  margin-bottom: 31px;
 }
 
 .features__title {
   .margin-reset();
+  margin-bottom: 12px;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -42,11 +43,16 @@
     display: flex;
     flex-direction: column;
     max-width: 620px;
-    padding: 100px 30px 10px 300px;
+    padding: 75px 15px 0 309px;
   }
 
   .features__item {
-    max-width: 300px;
+    max-width: 320px;
+    margin-bottom: 35px;
+
+    &:last-child {
+      margin-bottom: 29px;
+    }
   }
 
   .features__title {
@@ -60,7 +66,7 @@
   .features__wrapper::after {
     content: "";
     position: absolute;
-    top: -14px;
+    top: -4px;
     left: 0;
     width: 268px;
     height: 547px;
