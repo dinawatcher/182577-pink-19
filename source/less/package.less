@@ -112,12 +112,18 @@
 @media (min-width: @tablet-width) {
   .package__wrapper {
     max-width: 660px;
-    padding: 0 20px 55px;
+    padding: 0 20px 25px;
   }
 
   .package__table {
     width: 100%;
     transform: none;
+  }
+
+  .package__header {
+    width: 25%;
+    padding-top: 10px;
+    padding-bottom: 8px;
   }
   
   .package__header--tablet {
@@ -126,8 +132,38 @@
     background-color: @light-grey;
   }
 
+  .package__title {
+    margin-bottom: 0;
+  }
+
+  .package__price {
+    font-size: 18px;
+  }
+
+  .package__hit {
+    top: 5px;
+    left: -40px;
+  }
+
+  .package__feature {
+    width: 25%;
+  }
+
   .package__feature--tablet {
     display: table-cell;
+    padding: 5px 17px 9px 15px;
+  }
+
+  .package__included-feature::after {
+    top: 11px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .package__not-included-feature::after {
+    top: 10px;
+    right: 50%;
+    transform: translateX(50%);
   }
 
   .package__feature-name {
@@ -136,6 +172,7 @@
 
   .package__feature-name--tablet {
     display: inline;
+    text-transform: none;
   }
 
   .package__controls {
