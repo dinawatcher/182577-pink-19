@@ -61,17 +61,17 @@
             <fieldset class="contest-form__fieldset contest-form__fieldset--name">
               <legend class="visually-hidden">Ваши ФИО</legend>
               <ul class="contest-form__list">
-                <li class="contest-form__text-item contest-form__name-item">
+                <li class="contest-form__name-item">
                   <label class="contest-form__caption contest-form__caption--name" for="last-name">Фамилия:</label>
-                  <input type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
+                  <input class="contest-form__name-field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
                 </li>
-                <li class="contest-form__text-item contest-form__name-item">
+                <li class="contest-form__name-item">
                   <label class="contest-form__caption contest-form__caption--name" for="first-name">Имя:</label>
-                  <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
+                  <input class="contest-form__name-field" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
                 </li>
-                <li class="contest-form__text-item contest-form__name-item">
+                <li class="contest-form__name-item">
                   <label class="contest-form__caption contest-form__caption--name" for="patronymic">Отчество:</label>
-                  <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+                  <input class="contest-form__name-field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
                 </li>
               </ul>
             </fieldset>
@@ -129,13 +129,13 @@
             <fieldset class="contest-form__fieldset">
               <legend class="contest-form__title contest-form__title--tablet" align="center">Контактая информация</legend>
               <ul class="contest-form__list">
-                <li class="contest-form__text-item contest-form__contacts-item">
-                  <label class="contest-form__caption contest-form__caption--contacts" for="phone-number">Номер телефона</label>
-                  <input type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+                <li class="contest-form__text-item">
+                  <label class="contest-form__caption" for="phone-number">Номер телефона</label>
+                  <input class="contest-form__contacts-field" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
                 </li>
-                <li class="contest-form__text-item contest-form__text-item--contacts">
-                  <label class="contest-form__caption contest-form__caption--contacts" for="email">Адрес почты</label>
-                  <input type="email" name="email" id="email" placeholder="Введите почту *" required>
+                <li class="contest-form__text-item">
+                  <label class="contest-form__caption" for="email">Адрес почты</label>
+                  <input class="contest-form__contacts-field" type="email" name="email" id="email" placeholder="Введите почту *" required>
                 </li>
               </ul>
             </fieldset>
@@ -171,11 +171,11 @@
           <div class="contest-form__wrapper contest-form__wrapper--review">
             <fieldset class="contest-form__fieldset">
               <legend class="contest-form__title" align="center">Опишите свои эмоции</legend>
-              <textarea name="emotion-text" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea class="contest-form__message-field" name="emotion-text" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
           </div>
           <div class="contest-form__wrapper contest-form__wrapper--submit">
-            <input class="btn-square" type="submit" value="Отправить форму">
+            <input class="contest-form__submit-btn btn-square" type="submit" value="Отправить форму">
             <p class="contest-form__text-required">
               <span class="contest-form__required-glyph">*</span> — обязательные поля
             </p>
