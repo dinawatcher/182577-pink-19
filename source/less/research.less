@@ -5,15 +5,15 @@
 @media (min-width: @tablet-width) {
   .research {
     display: block;
-    padding: 100px 0 70px;
+    padding: 85px 0 70px;
   }
 
   .research__wrapper {
     position: relative;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 620px;
+    max-width: 660px;
+    padding: 0 20px;
     margin: 0 auto;
   }
 
@@ -22,8 +22,8 @@
     position: relative;
     width: 202px;
     height: 202px;
-    .margin-reset();
     padding: 10px 30px 15px;
+    margin: 0 auto 0 20px;
     color: @pink;
     border: 15px solid @pink;
     border-radius: 50%;
@@ -44,14 +44,21 @@
   }
 
   .research__info {
-    width: 50%;
+    width: 310px;
+    margin-left: auto;
   }
 
   .research__title {
     .margin-reset();
+    margin-bottom: 9px;
     color: @black;
     font-size: 30px;
     line-height: 36px;
+  }
+
+  .research__text {
+    .margin-reset();
+    margin-bottom: 10px;
   }
 
   .research__link {

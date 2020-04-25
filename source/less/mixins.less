@@ -7,3 +7,31 @@
 .margin-reset() {
   margin: 0;
 }
+
+.mobile-menu() {
+  &:hover {
+    color: @pink;
+  }
+
+  &:active {
+    color: fade(@pink, 30%);
+  }
+}
+
+.input-border() {
+  &:hover {
+    border-color: @dark-blue;
+  }
+ 
+  &:focus {
+    border-color: @pink;
+  }
+}
+
+.text-input() {
+  width: 100%;
+  height: 60px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border: 2px solid @dark-grey;
+}
