@@ -10,15 +10,16 @@
     transform: translateX(-50%);
     width: 100vw;
     max-width: 1200px;
+    height: 137px;
   }
 }
 
 .feed-item__photo-of-the-day {
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 0;
   width: 140px;
-  padding: 8px 0;
+  padding: 6px 0;
   color: @white;
   background-color: @pink;
   font-size: 12px;
@@ -28,7 +29,11 @@
 }
 
 .feed-item__wrapper {
-  padding: 25px 7px 25px 17px;
+  padding: 10px 7px 20px 17px;
+}
+
+.feed-item__panorama-wrapper {
+  padding: 10px 5px 20px 18px;
 }
 
 .feed-item__title {
@@ -46,10 +51,13 @@
 
 .feed-item__text {
   .margin-reset();
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .feed-item__likes-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
   padding: 0;
   color: @pink;
   background-color: transparent;
@@ -57,14 +65,78 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
-}
+  cursor: pointer;
 
-@media (min-width: @tablet-width) {
-  .feed-item__photo-of-the-day {
-    top: 55px;
+  svg {
+    margin-right: 20px;
+    fill: @pink;
   }
 }
 
-// @media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
+  .feed-item--panorama {
+    .feed-item__photo {
+      height: 509px;
+    }
+  }
 
-// }
+  .feed-item__photo-of-the-day {
+    top: 55px;
+  }
+
+  .feed-item__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 148px;
+    padding: 16px 32px 25px 27px;
+  }
+
+  .feed-item__panorama-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 17px 29px 15px 25px;
+  }
+
+  .feed-item__title {
+    order: -2;
+  }
+
+  .feed-item__likes-btn {
+    display: flex;
+    margin-top: auto;
+
+    svg {
+      order: 2;
+      margin: 0 0 0 auto;
+    }
+
+    .feed-item__like-panorama {
+      margin-left: 20px;
+    }
+  }
+
+  .feed-item__likes-btn--panorama {
+    order: -1;
+    margin-left: auto;
+  }
+
+  .feed-item__photo {
+    width: 300px;
+    height: 300px; // временно
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feed-item {
+    .feed-item__photo {
+      height: 400px;
+    }
+  }
+
+  .feed-item--panorama {
+    .feed-item__photo {
+      height: 506px; // временно
+    }
+  }
+}

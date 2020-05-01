@@ -55,7 +55,7 @@
   top: 14px;
   left: -37px;
   width: 120px;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
   background-color: @pink;
   font-weight: 400;
   text-transform: uppercase;
@@ -75,7 +75,7 @@
   content: "";
   position: absolute;
   top: 19px;
-  right: 17px;
+  right: 15px;
   width: 31px;
   height: 21px;
   background-image: url("../img/icon-yes.svg");
@@ -86,8 +86,8 @@
 .package__not-included-feature::after {
   content: "";
   position: absolute;
-  top: 13px;
-  right: 20px;
+  top: 14px;
+  right: 19px;
   width: 27px;
   height: 26px;
   background-image: url("../img/icon-no.svg");
@@ -110,6 +110,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .package {
+    padding-bottom: 41px;
+  }
+
   .package__wrapper {
     max-width: 660px;
     padding: 0 20px 25px;
@@ -122,10 +126,10 @@
 
   .package__header {
     width: 25%;
-    padding-top: 10px;
-    padding-bottom: 8px;
+    padding-top: 11px;
+    padding-bottom: 7px;
   }
-  
+
   .package__header--tablet {
     display: table-cell;
     border: none;
@@ -134,6 +138,7 @@
 
   .package__title {
     margin-bottom: 0;
+    font-size: 16px;
   }
 
   .package__price {
@@ -142,7 +147,7 @@
 
   .package__hit {
     top: 5px;
-    left: -40px;
+    left: -39px;
   }
 
   .package__feature {
@@ -151,17 +156,17 @@
 
   .package__feature--tablet {
     display: table-cell;
-    padding: 5px 17px 9px 15px;
+    padding: 5px 17px 10px 15px;
   }
 
   .package__included-feature::after {
-    top: 11px;
+    top: 10px;
     right: 50%;
     transform: translateX(50%);
   }
 
   .package__not-included-feature::after {
-    top: 10px;
+    top: 8px;
     right: 50%;
     transform: translateX(50%);
   }
@@ -181,8 +186,42 @@
 }
 
 @media (min-width: @desktop-width) {
+  .package {
+    padding-top: 64px;
+  }
   .package__wrapper {
     max-width: 960px;
-    padding: 90px 10px;
+    padding: 90px 10px 55px;
+  }
+
+  .package__header {
+    padding-top: 17px;
+    padding-bottom: 21px;
+  }
+
+  .package__title {
+    font-size: 18px;
+  }
+
+  .package__price {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .package__feature--tablet {
+    padding: 12px 17px 16px 21px;
+  }
+
+  .package__feature-name--tablet {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .package__included-feature::after {
+    top: 20px;
+  }
+
+  .package__not-included-feature::after {
+    top: 16px
   }
 }

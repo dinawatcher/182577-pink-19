@@ -13,11 +13,15 @@
 
 .download-app__list {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: baseline;
   width: 280px;
-  padding: 20px 0;
+  padding: 18px 0 19px;
   margin: 0 auto;
+}
+
+.download-app__store-link {
+  margin: 0 17px;
 }
 
 .download-app__link {
@@ -60,7 +64,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .download-app {
+    padding-top: 0;
+  }
+
   .download-app__list {
     padding: 50px 0;
+    margin-bottom: 0;
+  }
+
+  .download-app__link {
+    margin-bottom: 15px;
+    font-size: 21px;
   }
 }

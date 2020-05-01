@@ -1,0 +1,19 @@
+.slider-arrows {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  svg {
+    fill: fade(@dark-blue, 30%);
+
+    &:hover {
+      fill: fade(@dark-blue, 60%);
+    }
+
+    &:active {
+      fill: fade(@dark-blue, 10%);
+    }
+  }
+}

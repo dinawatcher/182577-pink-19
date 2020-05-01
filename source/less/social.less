@@ -7,7 +7,7 @@
 .social__item {
   width: 49px;
   height: 49px;
-  margin: 0 10px;
+  margin: 0 7px;
 }
 
 
@@ -19,6 +19,14 @@
   border: 3px solid fade(@dark-blue, 10%);
   border-radius: 50%;
   line-height: 0;
+
+  &:hover {
+    border-color: @dark-blue;
+  }
+
+  &:active {
+    border-color: fade(@dark-blue, 10%);
+  }
 }
 
 .social__link svg {
@@ -27,4 +35,8 @@
   top: 50%;
   transform: translate(-50%, -50%);
   fill: @pink;
+}
+
+.social__link:active svg {
+  fill: fade(@pink, 30%);
 }

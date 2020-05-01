@@ -1,11 +1,15 @@
 .page-main__title {
   max-width: 320px;
-  padding: 45px 35px 40px;
+  padding: 45px 30px 49px;
   margin: 0 auto;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+}
+
+.page-main__title--contest {
+  padding: 45px 20px 34px;
 }
 
 .page-main__tablet {
@@ -23,21 +27,41 @@
     padding: 0 20px;
   }
 
+  .page-main__break {
+    display: none;
+  }
+
   .page-main__title {
     .margin-reset();
     max-width: 540px;
-    padding: 90px 20px 65px;
+    padding: 90px 20px 78px;
     margin: 0 auto;
     font-size: 18px;
   }
 
+  .page-main__title--contest {
+    padding-bottom: 73px;
+  }
+
   .page-main__tablet {
     display: inline;
-  }  
+  }
 }
 
 @media (min-width: @desktop-width) {
   .page-main__title {
     max-width: 800px;
+  }
+
+  .page-main__title--contest {
+    padding-bottom: 15px;
+  }
+
+  .page-main__title--photo {
+    padding: 92px 20px 88px;
+  }
+
+  .page-main__break {
+    display: inline;
   }
 }

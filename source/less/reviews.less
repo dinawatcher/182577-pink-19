@@ -16,15 +16,18 @@
   text-align: center;
 }
 
-.reviews__arrows {
+.reviews__previous-arrow {
+  display: none;
+}
+
+.reviews__next-arrow {
   display: none;
 }
 
 @media (min-width: @tablet-width) {
   .reviews__wrapper {
     max-width: 660px;
-    padding-top: 56px;
-    padding-bottom: 15px;
+    padding: 56px 20px 16px;
   }
 
   .reviews__list {
@@ -38,15 +41,48 @@
 
 @media (min-width: @desktop-width) {
   .reviews__wrapper {
+    position: relative;
     max-width: 960px;
+    padding-top: 185px;
+
+    &::before {
+      position: absolute;
+      top: 73px;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      width: 79px;
+      height: 63px;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .reviews__list {
+    position: relative;
   }
 
   .reviews__item {
-    width: 820px;
+    width: 700px;
     margin: 0 auto;
   }
 
   .reviews__controls {
     display: none;
+  }
+
+  .reviews__previous-arrow {
+    position: absolute;
+    top: 213px;
+    left: 10px;
+    display: block;
+  }
+  
+  .reviews__next-arrow {
+    display: block;
+    position: absolute;
+    top: 213px;
+    right: 10px;
   }
 }

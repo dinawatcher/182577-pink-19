@@ -1,0 +1,28 @@
+.filter-controls__scale  {
+  height: 2px;
+  background-color: @dark-blue;
+}
+
+.filter-controls__toggle {
+  position: absolute;
+  top: -6px;
+  right: 35px;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: 2px solid @pink;
+  border-radius: 50%;
+  color: @light-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .filter-controls__toggle {
+    top: 14px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .filter-controls__toggle {
+    top: 17px;
+  }
+}

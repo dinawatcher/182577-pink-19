@@ -1,6 +1,6 @@
 .btn-round {
   display: block;
-  padding: 15px 5px 15px;
+  padding: 15px 5px 16px;
   border: 3px solid;
   border-radius: 30px;
   font-size: 18px;
@@ -14,12 +14,42 @@
 
 .btn-round--white {
   color: @white;
+
+  &:hover {
+    border-color: @white;
+    color: @pink;
+    background-color: @white;
+  }
+
+  &:active {
+    color: fade(@pink, 30%);
+  }
 }
 
 .btn-round--pink {
   color: @pink;
+
+  &:hover {
+    color: @white;
+    background-color: @pink;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+  }
 }
 
 .btn-round--light {
   color: fade(@dark-blue, 10%);
+
+  &:hover {
+    color: fade(@dark-blue, 30%);
+    border-color: fade(@dark-blue, 30%);
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    border-color: fade(@dark-blue, 30%);
+    background-color: fade(@dark-blue, 30%);
+  }
 }
