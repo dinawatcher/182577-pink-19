@@ -45,6 +45,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/photo-road-mobile@2x.jpg");
+  }
 }
 
 .photo-upload__tools-list {
@@ -143,6 +147,15 @@
     width: 300px;
     height: 400px; // временно
   }
+
+  .photo-upload__back {
+    background-image: url("../img/photo-road-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/photo-road-tablet@2x.jpg");
+    }
+  }
+
   .photo-upload__tools-wrapper {
     width: 300px;
   }
@@ -225,6 +238,14 @@
 
   .photo-upload__title {
     padding-top: 5px;
+  }
+
+  .photo-upload__back {
+    background-image: url("../img/photo-road-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/photo-road-desktop@2x.jpg");
+    }
   }
 
   .photo-upload__tools-wrapper {

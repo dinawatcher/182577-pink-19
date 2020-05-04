@@ -12,7 +12,7 @@
         <div class="main-nav__wrapper">
           <div class="main-nav__bar-wrapper">
             <div class="main-nav__bar">
-              <a class="main-nav__logo">
+              <a class="main-nav__logo" href="index.html">
                 <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="75px" height="22px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
                     <g>
                       <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
@@ -59,7 +59,11 @@
       <section class="photo-feed">
         <div class="photo-feed__wrapper">
           <article class="feed-item feed-item--panorama photo-feed__item photo-feed__item--fullwidth">
-            <img class="feed-item__photo" src="img/panorama-mobile@1x.jpg" alt="Панорама моста SkyBridge" width="320" height="137">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="feed-item__photo" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама моста SkyBridge" width="320" height="137">
+            </picture>
             <div class="feed-item__photo-of-the-day">
               Панорама дня
             </div>
@@ -83,7 +87,11 @@
             </div>
           </article>
           <article class="feed-item photo-feed__item">
-            <img class="feed-item__photo" src="img/photo-car-mobile@1x.jpg" alt="Фотография автомобиля" width="280" height="180">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img class="feed-item__photo" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография автомобиля" width="280" height="180">
+            </picture>
             <div class="feed-item__wrapper">
               <h3 class="feed-item__title">
                 <span class="feed-item__author">Левон</span>
@@ -103,7 +111,11 @@
             </div>
           </article>
           <article class="feed-item photo-feed__item">
-            <img class="feed-item__photo" src="img/photo-drumset-mobile@1x.jpg" alt="Фотография барабанной установки" width="280" height="180">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="feed-item__photo" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография барабанной установки" width="280" height="180">
+            </picture>
             <div class="feed-item__wrapper">
               <h3 class="feed-item__title">
                 <span class="feed-item__author">Антон</span>
@@ -123,7 +135,11 @@
             </div>
           </article>
           <article class="feed-item photo-feed__item">
-            <img class="feed-item__photo" src="img/photo-window-mobile@1x.jpg" alt="Фотография стеклянного потолка" width="280" height="180">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img class="feed-item__photo" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография стеклянного потолка" width="280" height="180">
+            </picture>
             <div class="feed-item__wrapper">
               <h3 class="feed-item__title">
                 <span class="feed-item__author">Борис</span>
@@ -143,7 +159,11 @@
             </div>
           </article>
           <article class="feed-item photo-feed__item">
-            <img class="feed-item__photo" src="img/photo-fair-mobile@1x.jpg" alt="Фотография кубанской бахчи" width="280" height="180">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="feed-item__photo" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография кубанской бахчи" width="280" height="180">
+            </picture>
             <div class="feed-item__wrapper">
               <h3 class="feed-item__title">
                 <span class="feed-item__author">Сергей</span>
@@ -163,7 +183,11 @@
             </div>
           </article>
           <article class="feed-item photo-feed__item">
-            <img class="feed-item__photo" src="img/photo-pov-mobile@1x.jpg" alt="Фотография ног на фоне гор" width="280" height="180">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="feed-item__photo" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография ног на фоне гор" width="280" height="180">
+            </picture>
             <div class="feed-item__wrapper">
               <h3 class="feed-item__title">
                 <span class="feed-item__author">Максим</span>
@@ -183,7 +207,11 @@
             </div>
           </article>
           <article class="feed-item photo-feed__item">
-            <img class="feed-item__photo" src="img/photo-wing-mobile@1x.jpg" alt="Фотография крыла самолета на фоне рассвета" width="280" height="180">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="feed-item__photo" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg" alt="Фотография крыла самолета на фоне рассвета" width="280" height="180">
+            </picture>
             <div class="feed-item__wrapper">
               <h3 class="feed-item__title">
                 <span class="feed-item__author">Надежда</span>
