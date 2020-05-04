@@ -16,7 +16,24 @@
   margin: auto;
 }
 
+.main-nav__logo:hover svg path {
+  fill: @pink;
+}
+
+.main-nav__logo:active svg path {
+  fill: fade(@white, 30%);
+}
+
+.main-nav__logo:not([href]) {
+  cursor: default;
+  pointer-events: none;
+}
+
 .main-nav__tablet-logo {
+  display: none;
+}
+
+.main-nav__desktop-logo {
   display: none;
 }
 
@@ -25,6 +42,18 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.main-nav__hamburger {
+  display: none;
+}
+
+.main-nav__toggle:hover svg path {
+  fill: @pink;
+}
+
+.main-nav__toggle:active svg path {
+  fill: fade(@white, 30%);
 }
 
 .main-nav__list {
@@ -65,10 +94,20 @@
     padding: 28px 20px 34px;
   }
 
-  .main-nav__logo svg {  // временно до следующего раздела
+  .main-nav__mobile-logo {
+    display: none;
+  }
+
+  .main-nav__tablet-logo {
+    display: initial;
+  }
+
+  .main-nav__logo svg { 
     width: 147px;
     height: 40px;
+    
   }
+
 }
 
 @media (min-width: @desktop-width) {
@@ -78,9 +117,9 @@
 
   .main-nav__wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     width: 960px;
-    padding: 36px 10px 26px;
+    padding: 28px 10px 34px;
     margin: 0 auto;
   }
 
@@ -92,6 +131,14 @@
   .main-nav__bar {
     width: 150px;
     padding: 0;
+  }
+
+  .main-nav__tablet-logo {
+    display: none;
+  }
+
+  .main-nav__desktop-logo {
+    display: initial;
   }
 
   .main-nav__toggle {

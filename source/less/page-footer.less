@@ -17,6 +17,23 @@
   text-align: center;
 }
 
+.page-footer__logo:not([href]) {
+  cursor: default;
+  pointer-events: none;
+}
+
+.page-footer__logo:hover svg path {
+  fill: @pink;
+}
+
+.page-footer__logo:active svg path {
+  fill-opacity: 0.3;
+}
+
+.page-footer__desktop-logo {
+  display: none;
+}
+
 .page-footer__social {
   margin-bottom: 40px;
 }
@@ -60,6 +77,10 @@
 
   .page-footer__logo {
     margin-right: 15px;
+  }
+
+  .page-footer__desktop-logo {
+    display: initial;
   }
 
   .page-footer__copyright {
