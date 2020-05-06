@@ -92,7 +92,6 @@
   .text-input();
   .input-border();
   padding: 19px 22px 15px 19px;
-  
 
   &::placeholder {
     color: @dark-blue;
@@ -134,16 +133,22 @@
   background-color: @white;
 }
 
-input:hover + .contest-form__checkbox {
+input:not(:disabled):hover + .contest-form__checkbox {
   border-color: @dark-blue;
 }
 
-input:active + .contest-form__checkbox {
+input:not(:disabled):active + .contest-form__checkbox {
   border-color: @pink;
 }
 
-input:focus + .contest-form__checkbox {
+input:not(:disabled):focus + .contest-form__checkbox {
   border-color: @pink;
+}
+
+input:disabled + .contest-form__checkbox {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
 }
 
 input:checked + .contest-form__checkbox {
@@ -169,20 +174,26 @@ input:checked + .contest-form__checkbox {
   background-color: @white;
 }
 
-input:hover + .contest-form__radio {
+input:not(:disabled):hover + .contest-form__radio {
   box-shadow: 0px 0px 0px 2px @dark-blue;
 }
 
-input:active + .contest-form__radio {
+input:not(:disabled):active + .contest-form__radio {
   box-shadow: 0px 0px 0px 2px @pink;
 }
 
-input:focus + .contest-form__radio {
+input:not(:disabled):focus + .contest-form__radio {
   box-shadow: 0px 0px 0px 2px @pink;
 }
 
 input:checked + .contest-form__radio {
   background-color: @pink;
+}
+
+input:disabled + .contest-form__radio {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
 }
 
 .contest-form__submit-btn {
