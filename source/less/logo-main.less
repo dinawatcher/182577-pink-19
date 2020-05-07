@@ -1,0 +1,50 @@
+.logo-main:not([href]) {
+  cursor: default;
+  pointer-events: none;
+}
+
+.logo-main:hover .logo-main__icon path {
+  fill: @pink;
+}
+
+.logo-main:active .logo-main__icon path {
+  fill: fade(@white, 30%);
+}
+
+.logo-main__icon {
+  width: 75px;
+  height: 22px;
+}
+
+.logo-main__tablet {
+  display: none;
+}
+
+.logo-main__desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .logo-main__icon {
+    width: 147px;
+    height: 40px;
+  }
+
+  .logo-main__mobile {
+    display: none;
+  }
+
+  .logo-main__tablet {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo-main__tablet {
+    display: none;
+  }
+
+  .logo-main__desktop {
+    display: inline;
+  }
+}

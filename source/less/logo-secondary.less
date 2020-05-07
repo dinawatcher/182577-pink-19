@@ -1,0 +1,34 @@
+.logo-secondary:not([href]) {
+  cursor: default;
+  pointer-events: none;
+}
+
+.logo-secondary:hover .logo-secondary__icon path {
+  fill: @pink;
+}
+
+.logo-secondary:active .logo-secondary__icon path {
+  fill-opacity: 0.3;
+}
+
+.logo-secondary__icon {
+  width: 147px;
+  height: 40px;
+}
+
+.logo-secondary__desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .logo-secondary__icon {
+    width: 147px;
+    height: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo-secondary__desktop {
+    display: inline;
+  }
+}
