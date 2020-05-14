@@ -8,6 +8,7 @@ var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
+var jsconcat = require("gulp-concat");
 var jsmin = require("gulp-jsmin");
 var htmlmin = require("gulp-htmlmin");
 var rename = require("gulp-rename");
@@ -32,12 +33,12 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-gulp.task("jsmin", function (done) {
-  gulp.src("source/js/script.js")
+gulp.task("js", function () {
+  return gulp.src("source/js/*.js")
+      .pipe(jsconcat("all.js"))
       .pipe(jsmin())
       .pipe(rename({suffix: ".min"}))
       .pipe(gulp.dest("build/js"));
-  done();
 });
 
 gulp.task("images", function () {
@@ -100,7 +101,7 @@ gulp.task("build", gulp.series(
   "css",
   "sprite",
   "html",
-  "jsmin",
+  "js",
  ));
 
 gulp.task("server", function () {
