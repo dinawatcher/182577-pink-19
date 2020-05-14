@@ -35,7 +35,7 @@ gulp.task("css", function () {
 
 gulp.task("js", function () {
   return gulp.src("source/js/*.js")
-      .pipe(jsconcat("all.js"))
+      .pipe(jsconcat("scripts.js"))
       .pipe(jsmin())
       .pipe(rename({suffix: ".min"}))
       .pipe(gulp.dest("build/js"));
