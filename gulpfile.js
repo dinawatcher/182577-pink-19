@@ -9,7 +9,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var jsconcat = require("gulp-concat");
-var jsmin = require("gulp-jsmin");
+var uglify = require("gulp-uglify");
 var htmlmin = require("gulp-htmlmin");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
@@ -34,11 +34,11 @@ gulp.task("css", function () {
 });
 
 gulp.task("js", function () {
-  return gulp.src("build/js/*.js")
+  return gulp.src("source/js/*.js")
     .pipe(jsconcat("scripts.js"))
-    .pipe(jsmin())
+    .pipe(uglify())
     .pipe(rename({suffix: ".min"}))
-    .pipe(gulp.dest("build/js"))
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("images", function () {
