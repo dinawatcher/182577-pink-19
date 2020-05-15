@@ -34,11 +34,11 @@ gulp.task("css", function () {
 });
 
 gulp.task("js", function () {
-  return gulp.src("source/js/*.js")
-      .pipe(jsconcat("scripts.js"))
-      .pipe(jsmin())
-      .pipe(rename({suffix: ".min"}))
-      .pipe(gulp.dest("build/js"));
+  return gulp.src("build/js/*.js")
+    .pipe(jsconcat("scripts.js"))
+    .pipe(jsmin())
+    .pipe(rename({suffix: ".min"}))
+    .pipe(gulp.dest("build/js"))
 });
 
 gulp.task("images", function () {

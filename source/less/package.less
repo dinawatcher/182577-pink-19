@@ -64,35 +64,24 @@
 }
 
 .package__feature {
-  position: relative;
   width: 280px;
   padding: 14px 17px 15px 22px;
   border: 2px solid @dark-grey;
   background-color: @white;
 }
 
-.package__included-feature::after {
-  content: "";
-  position: absolute;
-  top: 19px;
-  right: 15px;
-  width: 31px;
-  height: 21px;
+.package__included-feature {
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 31px 21px;
+  background-position: top 19px right 18px;
 }
 
-.package__not-included-feature::after {
-  content: "";
-  position: absolute;
-  top: 14px;
-  right: 19px;
-  width: 27px;
-  height: 26px;
+.package__not-included-feature {
   background-image: url("../img/icon-no.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 27px 26px;
+  background-position: top 13px right 19px;
 }
 
 .package__feature--tablet {
@@ -159,16 +148,12 @@
     padding: 5px 17px 10px 15px;
   }
 
-  .package__included-feature::after {
-    top: 10px;
-    right: 50%;
-    transform: translateX(50%);
+  .package__included-feature {
+    background-position: top 10px right 50%;
   }
 
-  .package__not-included-feature::after {
-    top: 8px;
-    right: 50%;
-    transform: translateX(50%);
+  .package__not-included-feature {
+    background-position: top 8px right 50%;
   }
 
   .package__feature-name {
@@ -223,11 +208,11 @@
     line-height: 30px;
   }
 
-  .package__included-feature::after {
-    top: 20px;
+  .package__included-feature {
+    background-position: top 19px right 50%;
   }
 
-  .package__not-included-feature::after {
-    top: 16px;
+  .package__not-included-feature {
+    background-position: top 15px right 50%;
   }
 }
