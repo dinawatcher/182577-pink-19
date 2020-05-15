@@ -34,7 +34,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("js", function () {
-  return gulp.src("source/js/*.js")
+  return gulp.src(["source/js/svg4everybody.min.js", "source/js/picturefill.min.js", "source/js/main.js"])
     .pipe(jsconcat("scripts.js"))
     .pipe(uglify())
     .pipe(rename({suffix: ".min"}))
