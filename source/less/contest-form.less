@@ -88,16 +88,30 @@
     font-size: 18px;
     line-height: 30px;
   }
+
+  &:-ms-input-placeholder {
+    color: @dark-blue;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .contest-form__contacts-field {
   .text-input();
   .input-border();
-  padding: 19px 22px 15px 19px;
+  padding: 16px 22px 15px 19px;
   vertical-align: middle;
 
   &::placeholder {
     color: @dark-blue;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &:-ms-input-placeholder {
+    color: @dark-blue;
+    font-family: "OpenSans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
   }
