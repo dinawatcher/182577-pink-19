@@ -20,7 +20,7 @@ if (form) {
   var firstName = form.querySelector("[name=first-name]");
   var lastName = form.querySelector("[name=last-name]");
   var email = form.querySelector("[name=email]");
-  
+
   for (var i = 0; i < input.length; i++) {
     input[i].removeAttribute("required");
   }
@@ -35,7 +35,7 @@ if (form) {
 
 if(popupError) {
   var popupErrorButton = popupError.querySelector(".popup__error-btn");
-  
+
   popupErrorButton.addEventListener("click", function() {
     popupError.classList.remove("popup--show");
   })
