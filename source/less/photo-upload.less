@@ -127,7 +127,7 @@
 
 @media (min-width: @tablet-width) {
   .photo-upload__wrapper {
-    padding: 57px 20px 11px;
+    padding: 57px 20px 9px;
   }
 
   .photo-upload__title {
@@ -145,7 +145,7 @@
 
   .photo-upload__block {
     width: 300px;
-    height: 400px; // временно
+    min-height: 400px;
   }
 
   .photo-upload__back {
@@ -167,7 +167,7 @@
   .photo-upload__tools-list {
     flex-wrap: wrap;
     padding: 0 19px 0 27px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
     border-bottom: none;
   }
 
@@ -259,7 +259,7 @@
 
   .photo-upload__tools-list {
     padding: 0;
-    margin-bottom: 132px;
+    margin-bottom: 134px;
   }
 
   .photo-upload__form {
@@ -268,6 +268,7 @@
   }
 
   .photo-upload__block {
+    height: 405px;
     padding: 5px 0 0 0;
     margin: 0;
   }
