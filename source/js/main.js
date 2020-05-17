@@ -13,24 +13,30 @@ toggle.addEventListener("click", function() {
 // ПОПАПЫ
 
 var form = document.querySelector(".contest-form");
-var input = form.getElementsByTagName("input");
 var popupError = document.querySelector(".popup--error");
-var popupErrorButton = popupError.querySelector(".popup__error-btn");
-var firstName = form.querySelector("[name=first-name]");
-var lastName = form.querySelector("[name=last-name]");
-var email = form.querySelector("[name=email]");
 
-for (var i = 0; i < input.length; i++) {
+if (form) {
+  var input = form.getElementsByTagName("input");
+  var firstName = form.querySelector("[name=first-name]");
+  var lastName = form.querySelector("[name=last-name]");
+  var email = form.querySelector("[name=email]");
+  
+  for (var i = 0; i < input.length; i++) {
     input[i].removeAttribute("required");
+  }
+
+  form.addEventListener("submit", function (evt) {
+    if (!firstName.value || !lastName.value || !email.value) {
+      evt.preventDefault();
+      popupError.classList.add("popup--show");
+    }
+  });
 }
 
-form.addEventListener("submit", function (evt) {
-  if (!firstName.value || !lastName.value || !email.value) {
-    evt.preventDefault();
-    popupError.classList.add("popup--show");
-  }
-})
-
-popupErrorButton.addEventListener("click", function(evt) {
-  popupError.classList.remove("popup--show");
-})
+if(popupError) {
+  var popupErrorButton = popupError.querySelector(".popup__error-btn");
+  
+  popupErrorButton.addEventListener("click", function() {
+    popupError.classList.remove("popup--show");
+  })
+}

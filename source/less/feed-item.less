@@ -64,6 +64,7 @@
   color: @pink;
   background-color: transparent;
   border: none;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
@@ -91,7 +92,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    min-height: 148px;
     padding: 16px 32px 24px 27px;
   }
 
@@ -105,9 +105,12 @@
     order: -2;
   }
 
+  .feed-item__text {
+    min-height: 50px;
+  }
+
   .feed-item__likes-btn {
     display: flex;
-    margin-top: auto;
 
     svg {
       order: 2;
@@ -126,17 +129,10 @@
 
   .feed-item__photo {
     width: 300px;
-    height: 300px; // временно
   }
 }
 
 @media (min-width: @desktop-width) {
-  .feed-item {
-    .feed-item__photo {
-      height: 400px;
-    }
-  }
-
   .feed-item--panorama {
     .feed-item__photo {
       height: 506px; // временно

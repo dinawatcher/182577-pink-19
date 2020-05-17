@@ -7,8 +7,13 @@
   fill: @pink;
 }
 
-.logo-secondary:active .logo-secondary__icon path {
+.logo-secondary:active .logo-secondary__icon {
   fill-opacity: 0.3;
+
+  .logo-secondary__text,
+  .logo-secondary__stars {
+    fill: @dark-blue;
+  }
 }
 
 .logo-secondary__icon {
@@ -28,6 +33,9 @@
 }
 
 @media (min-width: @desktop-width) {
+  .logo-secondary__mobile {
+    display: none;
+  }
   .logo-secondary__desktop {
     display: inline;
   }
