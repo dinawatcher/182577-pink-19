@@ -29,9 +29,11 @@
 
 .btn-round--pink {
   color: @pink;
+  border-color: @pink;
 
   &:hover {
     color: @white;
+    border: none;
     background-color: @pink;
   }
 
@@ -50,7 +52,7 @@
 
   &:active {
     color: fade(@white, 30%);
-    border-color: fade(@dark-blue, 30%);
+    border: none;
     background-color: fade(@dark-blue, 30%);
   }
 }
